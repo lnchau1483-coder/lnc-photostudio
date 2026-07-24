@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>LNC_PhotoStudio — Chụp Ảnh Thẻ Chuyên Nghiệp & Phục Hồi Ảnh AI</title>
+  <meta name="description" content="Studio chụp ảnh thẻ chuyên nghiệp và phục hồi ảnh cũ bằng công nghệ AI. Tạo ấn tượng hoàn hảo với chân dung chất lượng cao. Nhanh chóng, tự nhiên, đáng tin cậy." />
+  <meta name="keywords" content="chụp ảnh thẻ, ảnh hộ chiếu, ảnh visa, phục hồi ảnh cũ, ảnh chân dung, studio ảnh" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LNC_PhotoStudio — Chụp Ảnh Chuyên Nghiệp & Phục Hồi Ảnh" />
+  <meta property="og:description" content="Mỗi khoảnh khắc đều xứng đáng được hoàn hảo. Chụp ảnh thẻ chuyên nghiệp và phục hồi ảnh cũ bằng AI." />
+  <meta property="og:image" content="images/hero.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LNC_PhotoStudio — Chụp Ảnh Chuyên Nghiệp & Phục Hồi Ảnh" />
+  <meta name="twitter:description" content="Mỗi khoảnh khắc đều xứng đáng được hoàn hảo." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PhotographyBusiness",
+    "name": "LNC_PhotoStudio",
+    "description": "Studio chụp ảnh thẻ chuyên nghiệp và phục hồi ảnh cũ bằng AI",
+    "image": "images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hồ Chí Minh",
+      "addressCountry": "VN"
+    },
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2400"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="nav" id="nav" role="banner">
+  <div class="nav__inner container">
+    <a class="nav__logo" href="#top" aria-label="LNC_PhotoStudio trang chủ">
+      <span class="nav__logo-mark">L</span>
+      LNC_PhotoStudio
+    </a>
+
+    <nav class="nav__links" aria-label="Điều hướng chính">
+      <a class="nav__link" href="#services">Dịch vụ</a>
+      <a class="nav__link" href="#before-after">Trước & Sau</a>
+      <a class="nav__link" href="#gallery">Bộ sưu tập</a>
+      <a class="nav__link" href="#pricing">Bảng giá</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--primary btn--sm nav__cta" href="#contact">Đặt Lịch Ngay</a>
+      <button class="nav__toggle" aria-label="Mở menu" id="navToggle">
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="nav__mobile-overlay" id="mobileMenu">
+    <nav class="nav__mobile-menu">
+      <a class="nav__mobile-link" href="#services">Dịch vụ</a>
+      <a class="nav__mobile-link" href="#before-after">Trước & Sau</a>
+      <a class="nav__mobile-link" href="#gallery">Bộ sưu tập</a>
+      <a class="nav__mobile-link" href="#pricing">Bảng giá</a>
+      <a class="nav__mobile-link" href="#faq">FAQ</a>
+      <a class="btn btn--primary nav__mobile-link" href="#contact">Đặt Lịch Ngay</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__bg">
+    <img src="images/hero.jpg" alt="Chân dung chuyên nghiệp được chụp tại studio LNC_PhotoStudio" loading="eager" />
+  </div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content container">
+    <div class="hero__overline text-overline fade-up">
+      <span class="hero__overline-dot"></span>
+      Studio Ảnh Chuyên Nghiệp
+    </div>
+
+    <h1 class="hero__title text-hero fade-up fade-up-delay-1" id="hero-title">
+      Mỗi khoảnh khắc.<br />
+      Đều xứng đáng được <em>hoàn hảo.</em>
+    </h1>
+
+    <p class="hero__subtitle fade-up fade-up-delay-2">
+      Chụp ảnh thẻ chuyên nghiệp tạo ấn tượng đầu tiên mạnh mẽ. Phục hồi ảnh cũ giữ gìn kỷ niệm gia đình quý giá.
+    </p>
+
+    <div class="hero__actions fade-up fade-up-delay-3">
+      <a class="btn btn--primary" href="#contact">
+        <!-- Camera icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+        Đặt Lịch Chụp Ảnh
+      </a>
+      <a class="btn btn--outline" href="#before-after">
+        <!-- Sparkles icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+        Khôi Phục Ảnh Cũ
+      </a>
+    </div>
+
+    <div class="hero__trust fade-up fade-up-delay-4">
+      <div class="hero__trust-item">
+        <div class="hero__trust-value counter" data-target="12">0</div>
+        <div class="hero__trust-label">Năm kinh nghiệm</div>
+      </div>
+      <div class="hero__trust-divider"></div>
+      <div class="hero__trust-item">
+        <div class="hero__trust-value"><span class="counter" data-target="24">0</span>K+</div>
+        <div class="hero__trust-label">Bức ảnh đã giao</div>
+      </div>
+      <div class="hero__trust-divider"></div>
+      <div class="hero__trust-item">
+        <div class="hero__trust-value">4.9 ★</div>
+        <div class="hero__trust-label">Đánh giá trung bình</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Dịch vụ của chúng tôi</span>
+      <h2 class="section-header__title text-section" id="services-title">
+        Hai cách chúng tôi mang đến<br />sự hoàn hảo cho bạn
+      </h2>
+      <p class="section-header__desc">
+        Dù bạn cần một bức chân dung chuyên nghiệp hay muốn hồi sinh kỷ niệm gia đình quý giá — chúng tôi luôn sẵn sàng.
+      </p>
+    </div>
+
+    <div class="services__grid">
+      <!-- Service 1: ID Photography -->
+      <article class="service-card fade-up" id="service-id-photo">
+        <div class="service-card__image">
+          <img src="images/after-id.jpg" alt="Ảnh thẻ chuyên nghiệp được chụp tại LNC_PhotoStudio" loading="lazy" />
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </div>
+          <h3 class="service-card__title text-card-title">Chụp Ảnh Thẻ Chuyên Nghiệp</h3>
+          <p class="service-card__desc text-body">
+            Một bức chân dung chuyên nghiệp tạo nên ấn tượng đầu tiên mạnh mẽ. Sự tự tin bắt đầu từ một bức ảnh tuyệt vời.
+          </p>
+          <div class="service-card__features">
+            <span class="service-card__tag">Hộ chiếu</span>
+            <span class="service-card__tag">Visa</span>
+            <span class="service-card__tag">Hồ sơ xin việc</span>
+            <span class="service-card__tag">LinkedIn</span>
+            <span class="service-card__tag">Thẻ sinh viên</span>
+            <span class="service-card__tag">Hồ sơ công ty</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Service 2: Photo Restoration -->
+      <article class="service-card fade-up fade-up-delay-1" id="service-restoration">
+        <div class="service-card__image">
+          <img src="images/after-family.jpg" alt="Ảnh gia đình cũ được phục hồi bằng AI" loading="lazy" />
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          </div>
+          <h3 class="service-card__title text-card-title">Phục Hồi Ảnh Bằng AI</h3>
+          <p class="service-card__desc text-body">
+            Những kỷ niệm gia đình cũ xứng đáng có một cuộc sống thứ hai. Mỗi bức ảnh được phục hồi không chỉ là một hình ảnh — đó là một ký ức.
+          </p>
+          <div class="service-card__features">
+            <span class="service-card__tag">Ảnh cũ hư hỏng</span>
+            <span class="service-card__tag">Ảnh rách nát</span>
+            <span class="service-card__tag">Ảnh đen trắng</span>
+            <span class="service-card__tag">Ảnh phai màu</span>
+            <span class="service-card__tag">Tô màu ảnh</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+     ============================================================ -->
+<section class="why" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Tại sao chọn chúng tôi</span>
+      <h2 class="section-header__title text-section" id="why-title">
+        Chất lượng không thỏa hiệp
+      </h2>
+      <p class="section-header__desc">
+        Kết hợp công nghệ AI tiên tiến với bàn tay nghệ nhân chuyên nghiệp, mang đến kết quả tự nhiên và đáng tin cậy nhất.
+      </p>
+    </div>
+
+    <div class="why__grid">
+      <div class="why-card fade-up">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3 class="why-card__title">AI tăng tốc quy trình</h3>
+        <p class="why-card__desc">Công nghệ AI xử lý nhanh chóng, giúp rút ngắn thời gian chờ đợi mà vẫn đảm bảo chất lượng vượt trội.</p>
+      </div>
+
+      <div class="why-card fade-up fade-up-delay-1">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 22v-2"/><path d="m17 20.66-1-1.73"/><path d="M11 10.27 7 3.34"/><path d="m20.66 17-1.73-1"/><path d="m3.34 7 1.73 1"/><path d="M14 12h8"/><path d="M2 12h2"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m17 3.34-1 1.73"/><path d="m11 13.73-4 6.93"/></svg>
+        </div>
+        <h3 class="why-card__title">Nghệ sĩ chỉnh sửa thủ công</h3>
+        <p class="why-card__desc">Sau khi AI xử lý, nghệ sĩ chuyên nghiệp kiểm tra và chỉnh sửa thủ công để đảm bảo kết quả tự nhiên nhất.</p>
+      </div>
+
+      <div class="why-card fade-up fade-up-delay-2">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 class="why-card__title">Đúng chuẩn quy định</h3>
+        <p class="why-card__desc">Ảnh thẻ đáp ứng tiêu chuẩn chính thức cho hộ chiếu, visa, và tất cả giấy tờ tùy thân theo quy định.</p>
+      </div>
+
+      <div class="why-card fade-up fade-up-delay-3">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="why-card__title">Giao ảnh nhanh chóng</h3>
+        <p class="why-card__desc">Nhận ảnh thẻ trong vòng 15 phút. Ảnh phục hồi giao trong 24-48 giờ. Nhanh chóng và đáng tin cậy.</p>
+      </div>
+
+      <div class="why-card fade-up fade-up-delay-4">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/></svg>
+        </div>
+        <h3 class="why-card__title">Ánh sáng chuyên nghiệp</h3>
+        <p class="why-card__desc">Hệ thống đèn studio cao cấp tạo ánh sáng đều, tự nhiên, giúp làn da và biểu cảm đẹp nhất.</p>
+      </div>
+
+      <div class="why-card fade-up fade-up-delay-5">
+        <div class="why-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+        </div>
+        <h3 class="why-card__title">Chất lượng cao cấp</h3>
+        <p class="why-card__desc">Xuất ảnh độ phân giải cao, retouching tự nhiên. Mỗi bức ảnh đều xứng đáng với tiêu chuẩn cao nhất.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BEFORE / AFTER — ★ STAR SECTION
+     ============================================================ -->
+<section class="before-after" id="before-after" aria-labelledby="ba-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Sự khác biệt rõ ràng</span>
+      <h2 class="section-header__title text-section" id="ba-title">
+        Nhìn thấy để tin
+      </h2>
+      <p class="section-header__desc">
+        Kéo thanh trượt để chứng kiến sự thay đổi. Mỗi bức ảnh kể một câu chuyện về kỷ niệm được hồi sinh và sự tự tin được tạo dựng.
+      </p>
+    </div>
+
+    <div class="ba-showcase">
+      <!-- Comparison 1: Family Photo Restoration -->
+      <div class="ba-item fade-up">
+        <div class="ba-item__story">
+          <div class="ba-item__quote">
+            "Bức ảnh gia đình 40 năm,<br />được <em>hồi sinh.</em>"
+          </div>
+          <p class="ba-item__desc">
+            Bức ảnh duy nhất còn lại của cả gia đình — bị rách, phai màu theo thời gian. Giờ đây, nó trở lại rõ nét, tràn đầy sắc màu, như thể thời gian chưa hề trôi qua.
+          </p>
+          <div class="ba-item__meta">
+            <span>Phục hồi ảnh</span>
+            <span class="ba-item__meta-dot"></span>
+            <span>Tô màu AI</span>
+            <span class="ba-item__meta-dot"></span>
+            <span>Xử lý trong 24h</span>
+          </div>
+        </div>
+        <div class="ba-item__slider">
+          <div class="ba-slider" id="baSlider1">
+            <div class="ba-slider__before">
+              <img src="images/before-family.jpg" alt="Ảnh gia đình cũ bị hư hỏng" />
+            </div>
+            <div class="ba-slider__after">
+              <img src="images/after-family.jpg" alt="Ảnh gia đình sau khi được phục hồi bằng AI" />
+            </div>
+            <span class="ba-slider__label ba-slider__label--before">Trước</span>
+            <span class="ba-slider__label ba-slider__label--after">Sau</span>
+            <div class="ba-slider__divider"></div>
+            <div class="ba-slider__handle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 8 4 4-4 4"/><path d="m6 8-4 4 4 4"/></svg>
+            </div>
+            <input type="range" class="ba-slider__input" min="0" max="100" value="50" aria-label="So sánh ảnh trước và sau phục hồi" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison 2: ID Photo -->
+      <div class="ba-item fade-up">
+        <div class="ba-item__slider">
+          <div class="ba-slider ba-slider--square" id="baSlider2">
+            <div class="ba-slider__before">
+              <img src="images/before-id.jpg" alt="Ảnh selfie nghiệp dư" />
+            </div>
+            <div class="ba-slider__after">
+              <img src="images/after-id.jpg" alt="Ảnh thẻ chuyên nghiệp sau khi chụp tại studio" />
+            </div>
+            <span class="ba-slider__label ba-slider__label--before">Trước</span>
+            <span class="ba-slider__label ba-slider__label--after">Sau</span>
+            <div class="ba-slider__divider"></div>
+            <div class="ba-slider__handle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 8 4 4-4 4"/><path d="m6 8-4 4 4 4"/></svg>
+            </div>
+            <input type="range" class="ba-slider__input" min="0" max="100" value="50" aria-label="So sánh ảnh trước và sau chụp chuyên nghiệp" />
+          </div>
+        </div>
+        <div class="ba-item__story">
+          <div class="ba-item__quote">
+            "Sự tự tin bắt đầu từ<br />một bức ảnh <em>tuyệt vời.</em>"
+          </div>
+          <p class="ba-item__desc">
+            Từ một bức selfie bình thường đến chân dung chuyên nghiệp đạt chuẩn — ánh sáng hoàn hảo, biểu cảm tự tin, sẵn sàng cho mọi cơ hội.
+          </p>
+          <div class="ba-item__meta">
+            <span>Ảnh thẻ chuyên nghiệp</span>
+            <span class="ba-item__meta-dot"></span>
+            <span>Đạt chuẩn hộ chiếu</span>
+            <span class="ba-item__meta-dot"></span>
+            <span>15 phút</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Quy trình làm việc</span>
+      <h2 class="section-header__title text-section" id="process-title">
+        Đơn giản. Nhanh chóng. Hoàn hảo.
+      </h2>
+      <p class="section-header__desc">
+        Chỉ 4 bước đơn giản để nhận được bức ảnh hoàn hảo của bạn.
+      </p>
+    </div>
+
+    <div class="process__timeline">
+      <div class="process-step fade-up">
+        <div class="process-step__number">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          <span class="process-step__num">1</span>
+        </div>
+        <h3 class="process-step__title">Chụp hoặc gửi ảnh</h3>
+        <p class="process-step__desc">Đến studio chụp ảnh thẻ, hoặc gửi ảnh cũ cần phục hồi qua Zalo, Messenger.</p>
+      </div>
+
+      <div class="process-step fade-up fade-up-delay-1">
+        <div class="process-step__number">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          <span class="process-step__num">2</span>
+        </div>
+        <h3 class="process-step__title">AI xử lý thông minh</h3>
+        <p class="process-step__desc">Công nghệ AI phân tích và xử lý ảnh tự động — phục hồi chi tiết, cân bằng màu sắc, loại bỏ hư hỏng.</p>
+      </div>
+
+      <div class="process-step fade-up fade-up-delay-2">
+        <div class="process-step__number">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 20 7-7"/><path d="M16 3l5 5-7 7-5-5z"/><path d="M2 22l3.5-3.5"/><path d="M7 14l3 3"/></svg>
+          <span class="process-step__num">3</span>
+        </div>
+        <h3 class="process-step__title">Chỉnh sửa thủ công</h3>
+        <p class="process-step__desc">Nghệ sĩ chuyên nghiệp kiểm tra và tinh chỉnh thủ công — đảm bảo kết quả hoàn hảo, tự nhiên nhất.</p>
+      </div>
+
+      <div class="process-step fade-up fade-up-delay-3">
+        <div class="process-step__number">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          <span class="process-step__num">4</span>
+        </div>
+        <h3 class="process-step__title">Nhận ảnh hoàn chỉnh</h3>
+        <p class="process-step__desc">Ảnh thẻ giao tại chỗ trong 15 phút. Ảnh phục hồi giao qua file digital chất lượng cao trong 24-48h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+     ============================================================ -->
+<section class="gallery" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Bộ sưu tập</span>
+      <h2 class="section-header__title text-section" id="gallery-title">
+        Những tác phẩm của chúng tôi
+      </h2>
+      <p class="section-header__desc">
+        Mỗi bức ảnh là một câu chuyện. Mỗi khuôn mặt là một niềm tự hào.
+      </p>
+    </div>
+
+    <div class="gallery__grid fade-up">
+      <div class="gallery__item" data-lightbox="images/gallery-1.jpg">
+        <img src="images/gallery-1.jpg" alt="Chân dung chuyên nghiệp nữ doanh nhân" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Chân dung</span>
+            <p class="gallery__caption">Chân dung doanh nghiệp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item" data-lightbox="images/after-id.jpg">
+        <img src="images/after-id.jpg" alt="Ảnh thẻ chuyên nghiệp nam" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Ảnh thẻ</span>
+            <p class="gallery__caption">Ảnh hộ chiếu đạt chuẩn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item" data-lightbox="images/gallery-3.jpg">
+        <img src="images/gallery-3.jpg" alt="Ảnh cưới vintage được phục hồi" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Phục hồi</span>
+            <p class="gallery__caption">Ảnh cưới thập niên 1950</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item" data-lightbox="images/gallery-2.jpg">
+        <img src="images/gallery-2.jpg" alt="Chân dung doanh nhân chuyên nghiệp" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Chân dung</span>
+            <p class="gallery__caption">Hồ sơ doanh nghiệp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item" data-lightbox="images/after-family.jpg">
+        <img src="images/after-family.jpg" alt="Ảnh gia đình được phục hồi" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Phục hồi</span>
+            <p class="gallery__caption">Kỷ niệm gia đình hồi sinh</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item" data-lightbox="images/gallery-4.jpg">
+        <img src="images/gallery-4.jpg" alt="Ảnh chân dung sinh viên tốt nghiệp" loading="lazy" />
+        <div class="gallery__overlay">
+          <div>
+            <span class="gallery__tag">Chân dung</span>
+            <p class="gallery__caption">Kỷ niệm tốt nghiệp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Xem ảnh lớn">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Đóng">&times;</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+</div>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Khách hàng nói gì</span>
+      <h2 class="section-header__title text-section" id="testimonials-title">
+        Được tin tưởng bởi hàng nghìn<br />khách hàng hài lòng
+      </h2>
+    </div>
+
+    <div class="testimonials__grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">
+          "Tôi cần ảnh hộ chiếu gấp để xin visa. LNC_PhotoStudio chụp xong trong 10 phút, ảnh đẹp tự nhiên, đạt chuẩn ngay lần đầu. Không cần chụp lại!"
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">M</div>
+          <div>
+            <div class="testimonial-card__name">Minh Tâm</div>
+            <div class="testimonial-card__role">Kỹ sư phần mềm</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up fade-up-delay-1">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">
+          "Bức ảnh gia đình duy nhất của ông bà tôi đã bị rách và phai màu. Sau khi phục hồi, cả gia đình đều xúc động đến rơi nước mắt. Cảm ơn rất nhiều."
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">H</div>
+          <div>
+            <div class="testimonial-card__name">Hương Giang</div>
+            <div class="testimonial-card__role">Giáo viên</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">
+          "Ảnh LinkedIn mới giúp tôi nhận được nhiều lời mời kết nối hơn hẳn. Đầu tư nhỏ nhưng hiệu quả lớn cho sự nghiệp. Rất đáng để thử."
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">T</div>
+          <div>
+            <div class="testimonial-card__name">Thanh Hải</div>
+            <div class="testimonial-card__role">Giám đốc Marketing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="services pricing-section" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Bảng giá</span>
+      <h2 class="section-header__title text-section" id="pricing-title">
+        Minh bạch. Hợp lý. Xứng đáng.
+      </h2>
+      <p class="section-header__desc">
+        Chọn gói dịch vụ phù hợp với nhu cầu của bạn. Không chi phí ẩn.
+      </p>
+    </div>
+
+    <div class="services__grid">
+      <!-- Pricing 1 -->
+      <article class="service-card fade-up">
+        <div class="pricing-card__body">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </div>
+          <span class="pricing-card__overline text-overline">Ảnh thẻ cơ bản</span>
+          <h3 class="service-card__title text-card-title">Ảnh Thẻ Tiêu Chuẩn</h3>
+          <div class="pricing-card__price">50.000đ</div>
+          <p class="pricing-card__period">/ bộ 8 ảnh</p>
+          <a class="btn btn--outline-dark pricing-card__cta" href="#contact">Đặt lịch</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Chụp tại studio
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              In 8 ảnh + file mềm
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Giao trong 15 phút
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Đạt chuẩn CMND/CCCD
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Pricing 2 (Popular) -->
+      <article class="service-card pricing-card--popular fade-up fade-up-delay-1">
+        <div class="pricing-card__body">
+          <span class="pricing-card__badge">Được chọn nhiều nhất</span>
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+          </div>
+          <span class="pricing-card__overline text-overline">Ảnh thẻ cao cấp</span>
+          <h3 class="service-card__title text-card-title">Chân Dung Chuyên Nghiệp</h3>
+          <div class="pricing-card__price">150.000đ</div>
+          <p class="pricing-card__period">/ bộ hoàn chỉnh</p>
+          <a class="btn btn--primary pricing-card__cta" href="#contact">Đặt lịch ngay</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tất cả gói Cơ bản
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              AI retouching tự nhiên
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Đa kích thước (3×4, 4×6, 2×3)
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Đạt chuẩn Hộ chiếu &amp; Visa
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              File HD không giới hạn
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Pricing 3 -->
+      <article class="service-card fade-up fade-up-delay-2">
+        <div class="pricing-card__body">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          </div>
+          <span class="pricing-card__overline text-overline">Phục hồi ảnh</span>
+          <h3 class="service-card__title text-card-title">Phục Hồi &amp; Tô Màu</h3>
+          <div class="pricing-card__price">200.000đ</div>
+          <p class="pricing-card__period">/ bức ảnh</p>
+          <a class="btn btn--outline-dark pricing-card__cta" href="#contact">Gửi ảnh ngay</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              AI phục hồi + thủ công
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tô màu tự nhiên
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Sửa rách, nứt, phai màu
+            </li>
+            <li class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Giao file HD trong 24-48h
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-header__overline text-overline">Câu hỏi thường gặp</span>
+      <h2 class="section-header__title text-section" id="faq-title">
+        Bạn hỏi, chúng tôi trả lời
+      </h2>
+    </div>
+
+    <div class="faq__list fade-up">
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q1">
+          <span>Chụp ảnh thẻ mất bao lâu?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q1">
+          <p>Toàn bộ quy trình chụp, chỉnh sửa và in ảnh thẻ chỉ mất khoảng 10-15 phút. Bạn có thể nhận ảnh in và file mềm ngay tại studio.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q2">
+          <span>Ảnh thẻ có đạt chuẩn hộ chiếu và visa không?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q2">
+          <p>Có. Tất cả ảnh thẻ của chúng tôi đều tuân thủ tiêu chuẩn chính thức cho hộ chiếu, visa, CMND/CCCD, và các giấy tờ tùy thân khác. Nếu ảnh không đạt chuẩn, chúng tôi sẽ chụp lại miễn phí.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q3">
+          <span>Phục hồi ảnh cũ mất bao lâu?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q3">
+          <p>Thông thường từ 24 đến 48 giờ, tùy mức độ hư hỏng của ảnh gốc. Đối với những trường hợp phức tạp (ảnh bị rách nặng, mất nhiều chi tiết), có thể mất thêm 1-2 ngày.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q4">
+          <span>Tôi có cần mang ảnh gốc đến studio không?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q4">
+          <p>Không nhất thiết. Bạn có thể chụp lại ảnh gốc bằng điện thoại và gửi qua Zalo hoặc Messenger. Tuy nhiên, nếu ảnh gốc còn tốt, việc mang đến studio sẽ giúp chúng tôi scan với chất lượng cao hơn.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q5">
+          <span>AI có thực sự phục hồi được ảnh rách nát không?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q5">
+          <p>Công nghệ AI hiện đại có thể phục hồi phần lớn các loại hư hỏng: rách, nứt, phai màu, mất chi tiết. Tuy nhiên, sau khi AI xử lý, nghệ sĩ chuyên nghiệp luôn kiểm tra và chỉnh sửa thủ công để đảm bảo kết quả tự nhiên và chính xác nhất.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__question" aria-expanded="false" id="faq-q6">
+          <span>Có thể tô màu cho ảnh đen trắng không?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer" role="region" aria-labelledby="faq-q6">
+          <p>Hoàn toàn có thể. AI sẽ phân tích nội dung ảnh và tô màu tự nhiên. Nếu bạn biết màu sắc thực tế (ví dụ: màu áo, màu tóc), hãy cho chúng tôi biết để kết quả chính xác hơn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" id="contact" aria-labelledby="cta-title">
+  <div class="final-cta__bg">
+    <img src="images/hero.jpg" alt="" aria-hidden="true" loading="lazy" />
+  </div>
+  <div class="final-cta__glow"></div>
+
+  <div class="final-cta__content container">
+    <span class="text-overline" style="color: var(--accent-gold); display: block; margin-bottom: var(--space-md);">Sẵn sàng bắt đầu?</span>
+    <h2 class="final-cta__title text-section" id="cta-title">
+      Khôi phục kỷ niệm.<br />Tạo ấn tượng <em>hoàn hảo.</em>
+    </h2>
+    <p class="final-cta__desc">
+      Mỗi bức ảnh kể một câu chuyện. Hãy để chúng tôi giúp bạn kể câu chuyện đẹp nhất.
+    </p>
+    <div class="final-cta__buttons">
+      <a class="btn btn--primary" href="#">
+        <span class="final-cta__button-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          Đặt Lịch Ngay
+        </span>
+      </a>
+      <a class="btn btn--outline" href="#">
+        <span class="final-cta__button-icon">
+          <!-- Zalo-like icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Zalo
+        </span>
+      </a>
+      <a class="btn btn--outline" href="#">
+        <span class="final-cta__button-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+          Messenger
+        </span>
+      </a>
+      <a class="btn btn--outline" href="#">
+        <span class="final-cta__button-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Gọi Ngay
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">
+          <span class="footer__brand-mark">L</span>
+          LNC_PhotoStudio
+        </div>
+        <p class="footer__desc">
+          Mỗi khoảnh khắc đều xứng đáng được hoàn hảo. Chụp ảnh thẻ chuyên nghiệp & phục hồi ảnh AI.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.88-2.88 2.89 2.89 0 012.88-2.88c.28 0 .56.04.81.13v-3.5a6.37 6.37 0 00-.81-.05A6.34 6.34 0 003.15 15.4a6.34 6.34 0 0010.33 4.9 6.34 6.34 0 001.86-4.51V9.62a8.23 8.23 0 004.25 1.18V7.35a4.82 4.82 0 01-2-.66z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Dịch vụ</h4>
+        <a href="#services" class="footer__link">Ảnh thẻ chuyên nghiệp</a>
+        <a href="#services" class="footer__link">Phục hồi ảnh AI</a>
+        <a href="#services" class="footer__link">Tô màu ảnh cũ</a>
+        <a href="#services" class="footer__link">Chân dung doanh nghiệp</a>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Thông tin</h4>
+        <a href="#pricing" class="footer__link">Bảng giá</a>
+        <a href="#faq" class="footer__link">Câu hỏi thường gặp</a>
+        <a href="#gallery" class="footer__link">Bộ sưu tập</a>
+        <a href="#" class="footer__link">Blog</a>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Liên hệ</h4>
+        <a href="#" class="footer__link">Zalo: 0123 456 789</a>
+        <a href="#" class="footer__link">Messenger</a>
+        <a href="#" class="footer__link">contact@lncphotostudio.vn</a>
+        <a href="#" class="footer__link">Hồ Chí Minh, Việt Nam</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 LNC_PhotoStudio. Mỗi khoảnh khắc đều xứng đáng.</p>
+      <div class="footer__bottom-links">
+        <a href="#" class="footer__bottom-link">Chính sách quyền riêng tư</a>
+        <a href="#" class="footer__bottom-link">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky CTA -->
+<div class="mobile-cta" id="mobileCta">
+  <div class="mobile-cta__inner container">
+    <a class="btn btn--primary" href="#contact">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+      Đặt Lịch
+    </a>
+    <a class="btn btn--outline-dark" href="#" style="background: white;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Gọi Ngay
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
