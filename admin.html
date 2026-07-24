@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LNC PhotoStudio — Quản Trị Website</title>
+  
+  <!-- Phông chữ giống trang chính -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS riêng cho Admin -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- MÀN HÌNH ĐĂNG NHẬP -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card fade-up">
+      <div class="login-card__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+      </div>
+      <h1 class="login-card__title">Đăng nhập Quản Trị</h1>
+      <p class="login-card__desc">Sử dụng GitHub Personal Access Token (Classic) có quyền 'repo' để đăng nhập và lưu nội dung.</p>
+      
+      <div class="form-group">
+        <label for="githubToken">GitHub Token</label>
+        <input type="password" id="githubToken" class="form-control" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+      </div>
+      
+      <div class="form-group">
+        <label for="githubRepo">Repository (Ví dụ: username/repo)</label>
+        <input type="text" id="githubRepo" class="form-control" value="lnchau1483-coder/lnc-photostudio">
+      </div>
+
+      <button id="loginBtn" class="btn btn--primary btn--full">Đăng nhập</button>
+      <div id="loginError" class="error-message"></div>
+    </div>
+  </div>
+
+  <!-- BẢNG ĐIỀU KHIỂN (DASHBOARD) -->
+  <div id="dashboard" class="dashboard" style="display: none;">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">LNC</div>
+        <span>Admin Panel</span>
+      </div>
+      
+      <nav class="sidebar__nav">
+        <button class="nav-item active" data-target="hero">Hero Section</button>
+        <button class="nav-item" data-target="services">Dịch Vụ</button>
+        <button class="nav-item" data-target="gallery">Thư Viện Ảnh</button>
+        <button class="nav-item" data-target="pricing">Bảng Giá</button>
+        <button class="nav-item" data-target="faq">FAQ</button>
+      </nav>
+      
+      <div class="sidebar__bottom">
+        <a href="index.html" target="_blank" class="nav-item nav-item--ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Xem Website
+        </a>
+        <button id="logoutBtn" class="nav-item nav-item--danger">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Đăng xuất
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2 class="topbar__title">Chỉnh sửa nội dung</h2>
+          <p class="topbar__desc">Những thay đổi sẽ được lưu trực tiếp vào GitHub và Vercel sẽ tự động cập nhật web.</p>
+        </div>
+        <button id="saveBtn" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Lưu & Cập nhật Web
+        </button>
+      </header>
+      
+      <div class="content-area">
+        <div id="loadingIndicator" class="loading-state">
+          <div class="spinner"></div>
+          <p>Đang tải dữ liệu từ GitHub...</p>
+        </div>
+        
+        <form id="adminForm" class="admin-form" style="display: none;">
+          <!-- Các trường form sẽ được tạo tự động bằng admin.js ở đây -->
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Đã lưu thành công! Đang chờ Vercel cập nhật...</div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
