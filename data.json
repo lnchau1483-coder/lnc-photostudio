@@ -6,7 +6,7 @@
     "trust2Label": "Bức ảnh",
     "trust3": "4.9",
     "trust3Label": "Đánh giá sao",
-    "title": "Lưu Giữ Khoảnh Khắc,<br />Kiến Tạo <em>Hình Ảnh.</em>",
+    "title": "Lưu Giữ Khoảnh Khắc",
     "desc": "Từ phục hồi ảnh cũ nhuốm màu thời gian đến những bức ảnh thẻ chuyên nghiệp, sắc nét — chúng tôi mang đến trải nghiệm nhiếp ảnh đẳng cấp nhất.",
     "bgImage": "images/hero.jpg"
   },
@@ -14,49 +14,109 @@
     {
       "title": "Ảnh Thẻ Chuyên Nghiệp",
       "desc": "Không chỉ là một bức ảnh thẻ. Đó là ấn tượng đầu tiên hoàn hảo cho hồ sơ, CV và giấy tờ quan trọng của bạn.",
-      "tags": ["Hộ chiếu", "Visa", "CV/LinkedIn", "Hồ sơ doanh nghiệp"]
+      "tags": [
+        "Hộ chiếu",
+        "Visa",
+        "CV/LinkedIn",
+        "Hồ sơ doanh nghiệp"
+      ]
     },
     {
       "title": "Phục Hồi Ảnh Bằng AI",
       "desc": "Hồi sinh những ký ức quý giá. Công nghệ AI kết hợp cùng nghệ sĩ phục hồi thủ công trả lại vẻ đẹp nguyên bản cho những bức ảnh cũ.",
-      "tags": ["Làm nét", "Tô màu", "Sửa ảnh rách", "Khử nhiễu"]
+      "tags": [
+        "Làm nét",
+        "Tô màu",
+        "Sửa ảnh rách",
+        "Khử nhiễu"
+      ]
     }
   ],
   "why": [
-    { "title": "Công nghệ AI vượt trội", "desc": "Sử dụng các thuật toán AI tiên tiến nhất để xử lý ảnh nhanh gấp 10 lần với độ phân giải siêu cao." },
-    { "title": "Chuyên gia thủ công", "desc": "Mọi bức ảnh đều được các nghệ sĩ phục hồi chuyên nghiệp kiểm tra và tinh chỉnh lại bằng tay." },
-    { "title": "Chuẩn quốc tế", "desc": "Ảnh thẻ được canh chỉnh chuẩn xác 100% theo yêu cầu passport và visa của từng quốc gia." },
-    { "title": "Lấy ngay trong 15 phút", "desc": "Quy trình tối ưu giúp bạn nhận ảnh in và file mềm chất lượng cao chỉ sau 15 phút chụp." },
-    { "title": "Ánh sáng Studio chuẩn", "desc": "Hệ thống đèn chiếu sáng cao cấp tôn lên những đường nét tự nhiên và rạng rỡ nhất của bạn." },
-    { "title": "Cam kết hài lòng", "desc": "Chúng tôi sẽ chụp và chỉnh sửa cho đến khi bạn thực sự ưng ý với bức ảnh của mình." }
+    {
+      "title": "Công nghệ AI vượt trội",
+      "desc": "Sử dụng các thuật toán AI tiên tiến nhất để xử lý ảnh nhanh gấp 10 lần với độ phân giải siêu cao."
+    },
+    {
+      "title": "Chuyên gia thủ công",
+      "desc": "Mọi bức ảnh đều được các nghệ sĩ phục hồi chuyên nghiệp kiểm tra và tinh chỉnh lại bằng tay."
+    },
+    {
+      "title": "Chuẩn quốc tế",
+      "desc": "Ảnh thẻ được canh chỉnh chuẩn xác 100% theo yêu cầu passport và visa của từng quốc gia."
+    },
+    {
+      "title": "Lấy ngay trong 15 phút",
+      "desc": "Quy trình tối ưu giúp bạn nhận ảnh in và file mềm chất lượng cao chỉ sau 15 phút chụp."
+    },
+    {
+      "title": "Ánh sáng Studio chuẩn",
+      "desc": "Hệ thống đèn chiếu sáng cao cấp tôn lên những đường nét tự nhiên và rạng rỡ nhất của bạn."
+    },
+    {
+      "title": "Cam kết hài lòng",
+      "desc": "Chúng tôi sẽ chụp và chỉnh sửa cho đến khi bạn thực sự ưng ý với bức ảnh của mình."
+    }
   ],
   "beforeAfter": [
     {
       "quote": "Bức ảnh duy nhất của ông bà tôi,<br />nay đã <em>sống lại.</em>",
       "desc": "Công nghệ AI kết hợp phục hồi thủ công đã xóa đi những vết rách, làm rõ chi tiết khuôn mặt và phục hồi màu sắc tự nhiên một cách hoàn hảo.",
-      "meta": ["Ảnh cũ rách", "Tô màu tự nhiên", "Phục hồi 4K"],
+      "meta": [
+        "Ảnh cũ rách",
+        "Tô màu tự nhiên",
+        "Phục hồi 4K"
+      ],
       "beforeImg": "images/before-family.jpg",
       "afterImg": "images/after-family.jpg"
     },
     {
       "quote": "Sự tự tin bắt đầu từ<br />một bức ảnh <em>tuyệt vời.</em>",
       "desc": "Từ một bức selfie bình thường đến chân dung chuyên nghiệp đạt chuẩn — ánh sáng hoàn hảo, biểu cảm tự tin, sẵn sàng cho mọi cơ hội.",
-      "meta": ["Ảnh thẻ chuyên nghiệp", "Đạt chuẩn hộ chiếu", "15 phút"],
+      "meta": [
+        "Ảnh thẻ chuyên nghiệp",
+        "Đạt chuẩn hộ chiếu",
+        "15 phút"
+      ],
       "beforeImg": "images/before-id.jpg",
       "afterImg": "images/after-id.jpg"
     }
   ],
   "process": [
-    { "title": "Chụp hoặc gửi ảnh", "desc": "Đến studio chụp ảnh thẻ, hoặc gửi ảnh cũ cần phục hồi qua Zalo, Messenger." },
-    { "title": "AI xử lý thông minh", "desc": "Công nghệ AI phân tích và xử lý ảnh tự động — phục hồi chi tiết, cân bằng màu sắc." },
-    { "title": "Chỉnh sửa thủ công", "desc": "Nghệ sĩ chuyên nghiệp kiểm tra và tinh chỉnh thủ công — đảm bảo kết quả hoàn hảo." },
-    { "title": "Nhận ảnh chất lượng", "desc": "Nhận ảnh in cao cấp và file mềm HD qua Email/Zalo nhanh chóng." }
+    {
+      "title": "Chụp hoặc gửi ảnh",
+      "desc": "Đến studio chụp ảnh thẻ, hoặc gửi ảnh cũ cần phục hồi qua Zalo, Messenger."
+    },
+    {
+      "title": "AI xử lý thông minh",
+      "desc": "Công nghệ AI phân tích và xử lý ảnh tự động — phục hồi chi tiết, cân bằng màu sắc."
+    },
+    {
+      "title": "Chỉnh sửa thủ công",
+      "desc": "Nghệ sĩ chuyên nghiệp kiểm tra và tinh chỉnh thủ công — đảm bảo kết quả hoàn hảo."
+    },
+    {
+      "title": "Nhận ảnh chất lượng",
+      "desc": "Nhận ảnh in cao cấp và file mềm HD qua Email/Zalo nhanh chóng."
+    }
   ],
   "gallery": [
-    { "caption": "Chân dung doanh nhân", "img": "images/gallery-1.jpg" },
-    { "caption": "Ảnh thẻ hộ chiếu", "img": "images/gallery-2.jpg" },
-    { "caption": "Ảnh gia đình phục hồi", "img": "images/gallery-3.jpg" },
-    { "caption": "Chân dung tốt nghiệp", "img": "images/gallery-4.jpg" }
+    {
+      "caption": "Chân dung doanh nhân",
+      "img": "images/gallery-1.jpg"
+    },
+    {
+      "caption": "Ảnh thẻ hộ chiếu",
+      "img": "images/gallery-2.jpg"
+    },
+    {
+      "caption": "Ảnh gia đình phục hồi",
+      "img": "images/gallery-3.jpg"
+    },
+    {
+      "caption": "Chân dung tốt nghiệp",
+      "img": "images/gallery-4.jpg"
+    }
   ],
   "testimonials": [
     {
@@ -78,36 +138,71 @@
   "pricing": [
     {
       "title": "Ảnh Thẻ Tiêu Chuẩn",
-      "price": "50.000đ",
-      "period": "/ bộ 8 ảnh",
+      "price": "20.000đ",
+      "period": "/ bộ 4 ảnh",
       "popular": false,
-      "features": ["Chụp tại studio", "In 8 ảnh + file mềm", "Giao trong 15 phút", "Đạt chuẩn CMND/CCCD"]
+      "features": [
+        "Chụp tại studio",
+        "In 8 ảnh + file mềm",
+        "Giao trong 15 phút",
+        "Đạt chuẩn CMND/CCCD"
+      ]
     },
     {
       "title": "Chân Dung Chuyên Nghiệp",
       "price": "150.000đ",
       "period": "/ bộ hoàn chỉnh",
       "popular": true,
-      "features": ["Tất cả gói Cơ bản", "AI retouching tự nhiên", "Đa kích thước (3x4, 4x6, 2x3)", "Đạt chuẩn Hộ chiếu & Visa", "File HD không giới hạn"]
+      "features": [
+        "Tất cả gói Cơ bản",
+        "AI retouching tự nhiên",
+        "Đa kích thước (3x4, 4x6, 2x3)",
+        "Đạt chuẩn Hộ chiếu & Visa",
+        "File HD không giới hạn"
+      ]
     },
     {
       "title": "Phục Hồi & Tô Màu",
       "price": "200.000đ",
       "period": "/ bức ảnh",
       "popular": false,
-      "features": ["AI phục hồi + thủ công", "Tô màu tự nhiên", "Sửa rách, nứt, phai màu", "Giao file HD trong 24-48h"]
+      "features": [
+        "AI phục hồi + thủ công",
+        "Tô màu tự nhiên",
+        "Sửa rách, nứt, phai màu",
+        "Giao file HD trong 24-48h"
+      ]
     }
   ],
   "faq": [
-    { "q": "Chụp ảnh thẻ mất bao lâu?", "a": "Toàn bộ quy trình chụp, chỉnh sửa và in ảnh thẻ chỉ mất khoảng 10-15 phút. Bạn có thể nhận ảnh in và file mềm ngay tại studio." },
-    { "q": "Ảnh thẻ có đạt chuẩn hộ chiếu và visa không?", "a": "Có. Tất cả ảnh thẻ của chúng tôi đều tuân thủ tiêu chuẩn chính thức cho hộ chiếu, visa, CMND/CCCD, và các giấy tờ tùy thân khác." },
-    { "q": "Phục hồi ảnh cũ mất bao lâu?", "a": "Thông thường từ 24 đến 48 giờ, tùy mức độ hư hỏng của ảnh gốc. Đối với những trường hợp phức tạp có thể mất thêm 1-2 ngày." },
-    { "q": "Tôi có cần đặt lịch trước không?", "a": "Để tránh thời gian chờ đợi, chúng tôi khuyến khích bạn đặt lịch trước qua Zalo hoặc điện thoại, đặc biệt là vào cuối tuần." },
-    { "q": "Nếu tôi không ưng ý với bức ảnh thì sao?", "a": "Chúng tôi cam kết sự hài lòng 100%. Nếu bạn không ưng ý, chúng tôi sẽ chụp và chỉnh sửa lại hoàn toàn miễn phí cho đến khi bạn hài lòng." },
-    { "q": "Tôi có được nhận file gốc không?", "a": "Với các gói chụp chân dung chuyên nghiệp, bạn sẽ nhận được toàn bộ file gốc và file đã chỉnh sửa chất lượng cao qua Google Drive hoặc Zalo." }
+    {
+      "q": "Chụp ảnh thẻ mất bao lâu?",
+      "a": "Toàn bộ quy trình chụp, chỉnh sửa và in ảnh thẻ chỉ mất khoảng 10-15 phút. Bạn có thể nhận ảnh in và file mềm ngay tại studio."
+    },
+    {
+      "q": "Ảnh thẻ có đạt chuẩn hộ chiếu và visa không?",
+      "a": "Có. Tất cả ảnh thẻ của chúng tôi đều tuân thủ tiêu chuẩn chính thức cho hộ chiếu, visa, CMND/CCCD, và các giấy tờ tùy thân khác."
+    },
+    {
+      "q": "Phục hồi ảnh cũ mất bao lâu?",
+      "a": "Thông thường từ 24 đến 48 giờ, tùy mức độ hư hỏng của ảnh gốc. Đối với những trường hợp phức tạp có thể mất thêm 1-2 ngày."
+    },
+    {
+      "q": "Tôi có cần đặt lịch trước không?",
+      "a": "Để tránh thời gian chờ đợi, chúng tôi khuyến khích bạn đặt lịch trước qua Zalo hoặc điện thoại, đặc biệt là vào cuối tuần."
+    },
+    {
+      "q": "Nếu tôi không ưng ý với bức ảnh thì sao?",
+      "a": "Chúng tôi cam kết sự hài lòng 100%. Nếu bạn không ưng ý, chúng tôi sẽ chụp và chỉnh sửa lại hoàn toàn miễn phí cho đến khi bạn hài lòng."
+    },
+    {
+      "q": "Tôi có được nhận file gốc không?",
+      "a": "Với các gói chụp chân dung chuyên nghiệp, bạn sẽ nhận được toàn bộ file gốc và file đã chỉnh sửa chất lượng cao qua Google Drive hoặc Zalo."
+    }
   ],
   "cta": {
     "title": "Sẵn sàng lưu giữ khoảnh khắc<br /><em>hoàn hảo nhất?</em>",
     "desc": "Đặt lịch ngay hôm nay để nhận ưu đãi giảm 10% cho dịch vụ phục hồi ảnh cũ."
-  }
+  },
+  "sha": "b99d06c37508983b9c1f24df60c51ec50e02b14a"
 }
