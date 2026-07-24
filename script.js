@@ -375,4 +375,57 @@
 
   loadCMSData();
 
+  // ── Booking Form Submission (Google Apps Script) ──
+  const bookingForm = document.getElementById('bookingForm');
+  const formMessage = document.getElementById('formMessage');
+  const submitBookingBtn = document.getElementById('submitBookingBtn');
+
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(bookingForm);
+      const data = Object.fromEntries(formData.entries());
+      
+      submitBookingBtn.disabled = true;
+      submitBookingBtn.textContent = 'Đang gửi...';
+      formMessage.style.display = 'block';
+      formMessage.style.color = 'var(--text-secondary)';
+      formMessage.textContent = 'Đang kết nối tới máy chủ...';
+
+      try {
+        // Thay "YOUR_WEB_APP_URL" bằng URL của Google Apps Script bạn vừa deploy
+        const GOOGLE_SCRIPT_URL = 'YOUR_WEB_APP_URL';
+        
+        if (GOOGLE_SCRIPT_URL === 'YOUR_WEB_APP_URL') {
+          throw new Error('Vui lòng thay thế YOUR_WEB_APP_URL trong script.js bằng URL Google Apps Script của bạn.');
+        }
+
+        const res = await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors', // Cần thiết để bỏ qua lỗi CORS của Google Script
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+
+        // Vì mode: 'no-cors', response luôn mờ (opaque), ta cứ coi như gửi thành công nếu không văng lỗi
+        formMessage.style.color = 'var(--success)';
+        formMessage.textContent = '🎉 Đặt lịch thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.';
+        bookingForm.reset();
+
+      } catch (error) {
+        formMessage.style.color = 'var(--danger)';
+        formMessage.textContent = error.message.includes('YOUR_WEB_APP_URL') 
+            ? error.message 
+            : '❌ Có lỗi xảy ra khi gửi. Vui lòng thử lại sau hoặc gọi hotline.';
+        console.error(error);
+      } finally {
+        submitBookingBtn.disabled = false;
+        submitBookingBtn.textContent = 'Gửi thông tin đặt lịch';
+      }
+    });
+  }
+
 })();
