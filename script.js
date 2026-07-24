@@ -395,7 +395,7 @@
 
       try {
         // Thay "YOUR_WEB_APP_URL" bằng URL của Google Apps Script bạn vừa deploy
-        const GOOGLE_SCRIPT_URL = 'YOUR_WEB_APP_URL';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzww8LC8yIfM9oh8ZJUqp-LAKjkEdxg_Ze7lxHUUaSOxAh-ySgBGgD-HqxFalhblbhv/exec';
         
         if (GOOGLE_SCRIPT_URL === 'YOUR_WEB_APP_URL') {
           throw new Error('Vui lòng thay thế YOUR_WEB_APP_URL trong script.js bằng URL Google Apps Script của bạn.');
