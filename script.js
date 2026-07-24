@@ -288,4 +288,91 @@
     heroImg.style.opacity = '1';
   }
 
+  // ── CMS Hydration (Load data.json) ──
+  async function loadCMSData() {
+    try {
+      const res = await fetch('data.json');
+      if (!res.ok) return;
+      const data = await res.json();
+      
+      // Hero
+      if (data.hero) {
+        const title = document.querySelector('.text-hero');
+        const desc = document.querySelector('.hero__desc');
+        const bg = document.querySelector('.hero__bg img');
+        if (title) title.innerHTML = data.hero.title;
+        if (desc) desc.innerHTML = data.hero.desc;
+        if (bg) bg.src = data.hero.bgImage;
+      }
+
+      // Services
+      if (data.services) {
+        const srvCards = document.querySelectorAll('#services .service-card');
+        data.services.forEach((srv, i) => {
+          if (srvCards[i]) {
+            const t = srvCards[i].querySelector('.text-card-title');
+            const d = srvCards[i].querySelector('.text-body');
+            if (t) t.innerHTML = srv.title;
+            if (d) d.innerHTML = srv.desc;
+          }
+        });
+      }
+
+      // Gallery
+      if (data.gallery) {
+        const galItems = document.querySelectorAll('.gallery__item');
+        data.gallery.forEach((g, i) => {
+          if (galItems[i]) {
+            galItems[i].setAttribute('data-lightbox', g.img);
+            const img = galItems[i].querySelector('img');
+            const cap = galItems[i].querySelector('.gallery__caption');
+            if (img) img.src = g.img;
+            if (cap) cap.textContent = g.caption;
+          }
+        });
+      }
+
+      // Pricing
+      if (data.pricing) {
+        const pCards = document.querySelectorAll('#pricing .service-card');
+        data.pricing.forEach((p, i) => {
+          if (pCards[i]) {
+            const title = pCards[i].querySelector('.text-card-title');
+            const price = pCards[i].querySelector('.pricing-card__price');
+            const period = pCards[i].querySelector('.pricing-card__period');
+            if (title) title.innerHTML = p.title;
+            if (price) price.innerHTML = p.price;
+            if (period) period.innerHTML = p.period;
+            
+            // Features
+            const features = pCards[i].querySelectorAll('.pricing-card__feature');
+            p.features.forEach((feat, j) => {
+              if (features[j]) {
+                features[j].innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> ${feat}`;
+              }
+            });
+          }
+        });
+      }
+
+      // FAQ
+      if (data.faq) {
+        const faqs = document.querySelectorAll('.faq-item');
+        data.faq.forEach((f, i) => {
+          if (faqs[i]) {
+            const q = faqs[i].querySelector('.faq-item__question span:first-child');
+            const a = faqs[i].querySelector('.faq-item__answer p');
+            if (q) q.textContent = f.q;
+            if (a) a.textContent = f.a;
+          }
+        });
+      }
+
+    } catch (err) {
+      console.log('CMS data not found or failed to load:', err);
+    }
+  }
+
+  loadCMSData();
+
 })();
